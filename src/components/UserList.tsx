@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { IUser } from "../models/IUser";
 import { UserService } from "../services/UserService";
+import {Link} from 'react-router-dom';
 interface IProps { }
 interface IStates {
     loading: boolean,
@@ -63,7 +64,7 @@ let UserList: React.FC<IProps> = () => {
                         value => {
                             return <tr key={value.id}>
                                 <td>{value.id}</td>
-                                <td>{value.name}</td>
+                                <td><Link to={`/contact/${value.id}`} className="text-decoration-none text-success">{value.name}</Link></td>
                                 <td>{value.username}</td>
                                 <td>{value.email}</td>
                                 <td>{value.address.city}</td>
