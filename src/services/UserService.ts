@@ -6,4 +6,9 @@ export class UserService {
         let dataURL: string = `${this.serverURL}/users`;
         return axios.get(dataURL);
     }
+
+    public static getUser(id: string){
+        let dataURL: string = `${this.serverURL}/users/${id}`;
+        return axios.get(dataURL);
+    }
 }
