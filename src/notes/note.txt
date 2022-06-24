@@ -1,0 +1,6 @@
+npx  create-react-app app-name --template=typescript
+nam install axios @types/axios
+npm install react-router-dom @types/react-router-dom
+npm install bootstrap --> index.jsx
+bootstrap.css
+bootstrap.bundle.js
