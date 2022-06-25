@@ -2,12 +2,11 @@ import React from "react";
 interface IProps{}
 interface IStates{}
 let NavBar: React.FC<IProps> = () => {
-    return <nav className="navbar navbar-expand-lg bg-light">
-        <ul className="navbar-nav">
-          <li className="nav-item">
-           ITEM
-          </li>
-        </ul>
-  </nav>
+    return <div className="container">
+      <div className="row">
+        <p className="h3">About</p>
+        <p> react type script axios ...</p>
+      </div>
+    </div>
 }
 export default NavBar;

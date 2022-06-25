@@ -5,7 +5,7 @@ import UserList from './components/UserList';
 import NavBar from './components/NavBar';
 import {Route, Routes, Navigate } from 'react-router-dom';
 import UserDetails from './components/UserDetails';
-import About from './components/NavBar';
+import About from './components/About';
 
 function App() {
   return (
